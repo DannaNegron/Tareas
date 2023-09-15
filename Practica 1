@@ -1,7 +1,28 @@
+/**
+* Computadora.java
+*
+* @author Héctor Manuel Quej Cosgaya
+* @author José Aguilar Canepa
+* 
+* @created 04/11/12 11:08 AM
+*
+* Esta clase es tu examen diagnóstico para entrar a Lenguaje de Programación II
+* Intencionalmente, los autores han introducido una serie de errores en esta clase. 10 de ellos, en concreto.
+* Tu trabajo es encontrarlos, y corregirlos. ¡Utiliza todo lo que aprendiste en Lenguaje de Programación I!
+* Las únicas reglas que tienes que seguir son:
+*     1.- NO puedes borrar ningún método. La clase empieza con un constructor, 8 métodos y el método main: así debe finalizar.
+*     2.- NO puedes borrar ninguna variable,.
+*     3.- NO puedes modificar el método main. Palabra de desarrollador de software que no hay nada malo con él.
+* Salvo esas reglas, puedes hacer las modificaciones que creas pertinentes. Sin embargo, solamente 10 cambios son necesarios para que la clase funcione de nuevo
+* Que no te engañe el compilador, ni te desesperes. ¡Unicamente hay 10 errores!
+*
+* ¡Buena suerte, y bienvenido a Lenguaje de Programación II!
+*/
+import javax.swing.JOptionPane;
 public class Computadora{
 	
-	static int discoDuro;
-	Double velocidadProcesador;
+	int discoDuro;
+	double velocidadProcesador;
 	Computadora peer;
 	String sistemaOperativo;
 	String nombre;
@@ -21,12 +42,12 @@ public class Computadora{
 		JOptionPane.showMessageDialog(null, nombre + ": Bienvenido");
 	}
 	
-	public void ejecutar(String programa, int posicion){
+	public boolean ejecutar(String programa, int posicion){
 		if(posicion != 0){
 			memoria[posicion] = programa;
 			JOptionPane.showMessageDialog(null, nombre + ": Ejecutando el programa " + programa);
-
 			}
+			return true;
 		}
 	
 	public void recibirDatos(String mensaje){
@@ -51,7 +72,7 @@ public class Computadora{
 	
 	public void apagar(){
 		JOptionPane.showMessageDialog(null, "Cerrando sesi�n...");
-		for(int i = 1; i < memoria.length; i++){
+		for(int i = 1; i < i < 10; i++){
 			memoria[i] = null;
 		}
 		JOptionPane.showMessageDialog(null, nombre + ": Windows se est� cerrando");
