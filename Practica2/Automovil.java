@@ -84,7 +84,7 @@ public class Automovil {
 		System.out.println("Nos hemos detenido!");
 	}
 	public void frenar(int cantidad){
-		this.velocidad -= cantidad;
+		velocidad -= cantidad;
 		if (velocidad < 0) velocidad = 0;
 		System.out.println("Vamos a" + velocidad + "km/h");
 	}
