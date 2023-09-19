@@ -105,7 +105,7 @@ public class Automovil {
 	*/
 	public void duplicarVelocidad(int velocidad){
 		this.velocidad *= 2;
-		System.out.println("Ahora vas a " + velocidad + " km/h!");
+		System.out.println("Ahora vas a " + this.velocidad + " km/h!");
 	}
 	
 	/**
