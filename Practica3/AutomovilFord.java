@@ -60,7 +60,7 @@ public class AutomovilFord {
 	* @param cantidad: El n�mero de km/h en que aumentar� la velocidad del auto.
 	*/
 	public void acelerar() {
-		if (motor.encendido) {
+		if (motor.getEncendido()) {
 			/*motor.comprimirMezcla();
 			motor.encenderMezcla();
 			motor.prepararMezcla();	*/
