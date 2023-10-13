@@ -11,3 +11,4 @@ public class PokemonDragon extends Pokemon {
     public PokemonDragon(String nombre, String tipo, int nivel){
         super(nombre, "Fantasma Dragon", nivel, 100);
     }  
+}  
