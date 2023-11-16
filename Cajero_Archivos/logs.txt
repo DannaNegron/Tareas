@@ -1,0 +1,5 @@
+Retirar, danna, 456, SI
+Salir, danna, 36241, SI
+Retirar, , 50, NO
+Retirar, , 150, SI
+Salir, , 5028, SI
